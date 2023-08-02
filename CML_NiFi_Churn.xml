@@ -2,7 +2,7 @@
 <template encoding-version="1.3">
     <description></description>
     <groupId>b2a4c950-0189-1000-4fbb-9c5f6cce1416</groupId>
-    <name>CML_NIFI_ChurnFlow</name>
+    <name>CML_NiFi_Churn</name>
     <snippet>
         <connections>
             <id>69090b3e-6683-3cae-0000-000000000000</id>
@@ -79,12 +79,46 @@
             </source>
             <zIndex>0</zIndex>
         </connections>
+        <labels>
+            <id>1600f931-4f76-3ec3-0000-000000000000</id>
+            <parentGroupId>27a47db1-d6be-3324-0000-000000000000</parentGroupId>
+            <position>
+                <x>0.0</x>
+                <y>0.0</y>
+            </position>
+            <height>432.0</height>
+            <label>Get JSON file and add attributes</label>
+            <style>
+                <entry>
+                    <key>font-size</key>
+                    <value>12px</value>
+                </entry>
+            </style>
+            <width>856.0</width>
+        </labels>
+        <labels>
+            <id>dfc0c9d8-a76d-3324-0000-000000000000</id>
+            <parentGroupId>27a47db1-d6be-3324-0000-000000000000</parentGroupId>
+            <position>
+                <x>0.0</x>
+                <y>520.0</y>
+            </position>
+            <height>256.0</height>
+            <label>Call the deployed CML Model using values from the JSON file.  You will need to include your API key</label>
+            <style>
+                <entry>
+                    <key>font-size</key>
+                    <value>12px</value>
+                </entry>
+            </style>
+            <width>848.0</width>
+        </labels>
         <processors>
             <id>16a25938-0138-34bc-0000-000000000000</id>
             <parentGroupId>27a47db1-d6be-3324-0000-000000000000</parentGroupId>
             <position>
-                <x>16.0</x>
-                <y>864.0</y>
+                <x>408.0</x>
+                <y>824.0</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -149,8 +183,8 @@
             <id>6abc6cd3-1682-30dc-0000-000000000000</id>
             <parentGroupId>27a47db1-d6be-3324-0000-000000000000</parentGroupId>
             <position>
-                <x>0.0</x>
-                <y>0.0</y>
+                <x>408.0</x>
+                <y>40.0</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -304,8 +338,8 @@
             <id>9b6da37d-68d8-3f32-0000-000000000000</id>
             <parentGroupId>27a47db1-d6be-3324-0000-000000000000</parentGroupId>
             <position>
-                <x>8.0</x>
-                <y>600.0</y>
+                <x>408.0</x>
+                <y>544.0</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -559,7 +593,7 @@
                     </entry>
                     <entry>
                         <key>Attributes to Send</key>
-                        <value>$TechSupport</value>
+                        <value>$StreamingTV, $MonthlyCharges, $PhoneService, $PaperlessBilling, $Partner, $OnlineBackup, $gender, $Contract, $TotalCharges, $StreamingMoviesBest, $TechSupport </value>
                     </entry>
                     <entry>
                         <key>Useragent</key>
@@ -679,8 +713,8 @@
             <id>f8ad7c34-0d8c-3a6a-0000-000000000000</id>
             <parentGroupId>27a47db1-d6be-3324-0000-000000000000</parentGroupId>
             <position>
-                <x>0.0</x>
-                <y>272.0</y>
+                <x>408.0</x>
+                <y>280.0</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -952,5 +986,5 @@
             <type>org.apache.nifi.processors.standard.EvaluateJsonPath</type>
         </processors>
     </snippet>
-    <timestamp>08/01/2023 20:52:23 UTC</timestamp>
+    <timestamp>08/02/2023 13:30:18 UTC</timestamp>
 </template>
